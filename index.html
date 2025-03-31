@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"; rel="stylesheet">
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+	<style>
+		
+		body{
+			background-image: url();
+			background-size: 100%;
+		}
+
+		.btn-secondary{
+			color: black;
+			border: 2px solid black;
+		}
+
+		.btn-secondary:hover{
+			background: #fff;
+			color: black;
+			border-color: black;
+		}
+
+		.btn-block{
+			width: 20%;
+			display: inline-block;
+		}
+
+	</style>
+
+	<title></title>
+</head>
+<body>
+
+	<div class="container">
+		<h1>Who's team will win this Intramurals?</h1>
+		<br>
+		<input type="text" class="form-control" id="intrams" placeholder="Blue Bears, Red Bulldogs, Green Hornets, Yellow Tigers">
+		<br>
+		<button type="submit" class="btn btn-secondary btn-block" onclick="ruby()"> Show me </button>
+		<br>
+		<h1 id="show_here"> Winning team is... </h1>
+	</div>
+
+	<script>
+		
+		function ruby(){
+			var team = document.getElementById("intrams").value;
+
+			if (team == 'Blue Bears') {
+				document.getElementById("show_here").innerHTML = "Blue Bears fight fight grrr!";
+			}
+
+			else if (team == 'Red Bulldogs') {
+				document.getElementById("show_here").innerHTML = "rawr ig";
+			}
+
+			else if (team == 'Green Hornets') {
+				document.getElementById("show_here").innerHTML = "uwu";
+			}
+
+			else if (team == 'Yellow Tigers') {
+				document.getElementById("show_here").innerHTML = "meow lol";
+			}
+
+			else {
+				document.getElementById("show_here").innerHTML = "Go for the win!"; }
+
+		}
+
+	</script>
+
+</body>
+</html>
